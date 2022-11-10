@@ -3,6 +3,11 @@ import './App.css';
 import ReactSwitch from 'react-switch';
 import { useState } from "react";
 import { useThemeContext } from './context/ThemeContext';
+import { Route, Routes} from "react-router-dom";
+import Layout from "./pages/Layout";
+import Home from "./pages/Home"; 
+import About from "./pages/About";
+import Contact from "./pages/Contact"
 
 function App() {
   const {contextTheme, setContextTheme} = useThemeContext()
@@ -33,14 +38,14 @@ function App() {
             id="material-switch"/>
         <h2>{contextTheme} mode</h2>
         <img src={logo} className="App-logo" alt="logo"/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+       <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home/>}/>
+          <Route path="about" element={<About/>}/>
+          <Route path="contact" element={<Contact/>}/>
+        </Route>
+
+       </Routes>
       </header>
     </div>
   );
