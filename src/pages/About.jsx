@@ -6,8 +6,8 @@ const About = () => {
   return (
     <div>
         <h2>About</h2>
+        <p>About us</p>
         <p>Theme {contextTheme}</p>
-        <p>Pagina acerca de...</p>
     </div>
   )
 }

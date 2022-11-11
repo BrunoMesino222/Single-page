@@ -4,15 +4,15 @@ import { Outlet } from 'react-router-dom'
 
 const Layout = () => {
   return (
-    <div>
+    <div className='layoutCont'>
         <nav>
-            <ul className='list'>
+            <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
             </ul>
         </nav>
-        <section>
+        <section className='outlet'>
             <Outlet></Outlet>
         </section>
     </div>

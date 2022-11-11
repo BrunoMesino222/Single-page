@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .App-logo {
@@ -14,29 +15,32 @@
 }
 
 .App-header {
-  
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   
 }
 
-#dark {
-  background-color: #282c34;
-  color: white;
+#Dark {
+  background-color: hsl(220, 13%, 18%);
+  color: #ffffffd8
 }
 
-#dark a {
-  color:white
+#Dark a {
+  color: #ffffffd8
 }
 
-#ligth{
-  background-color: #f2f4f6;
-  color: #0d3f67;
+#Dark a:hover{
+  color: #ffffffab
 }
+
+#Ligth{
+  background-color: #f2f4f69a;
+  color: #28455c;
+}
+
 
 .App-link {
   color: #61dafb;
@@ -51,17 +55,55 @@
   }
 }
 
-.react-switch{
-  margin-bottom: 15px;
-}
-
-.list li {
-  display: inline-block;
-  padding-left: 3px;
-  padding-right: 3px;
-}
-
-.list{
+nav {
   display: flex;
+  justify-content: center;
+
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 50%;
+  list-style: none; 
+  padding: 0px;
+  margin-left: 12px;
+  gap: 3rem;
+}
+
+
+h2{
+  margin-top: 3px;
+}
+
+.layoutCont {  
+  display: flex;
+  flex-direction: column;
+  width: 80%;
   
+}
+
+.layoutCont nav ul li a{
+  color: #ac1c1cd8 ;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+
+.layoutCont nav ul li a:hover{
+color: #c44040d8 ;
+}
+
+.outlet{
+  display: flex;
+  justify-content: center;
+}
+
+.outlet p{
+  margin-top: 5px;
+}
+
+.react-switch{
+  margin-top: 10px;
 }

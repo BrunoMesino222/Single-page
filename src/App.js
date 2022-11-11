@@ -14,7 +14,7 @@ function App() {
 
   const [checked, setChecked] = useState(false)
   const handleSwitch = (nextChecked) => {
-    setContextTheme((state) => (state === "light"? "dark":"light"))
+    setContextTheme((state) => (state === "Light"? "Dark":"Light"))
     setChecked(nextChecked)
   }
 
@@ -25,8 +25,8 @@ function App() {
         <ReactSwitch 
             onChange={handleSwitch}
             checked={checked}
-            onColor="#86d3ff"
-            onHandleColor="#2693e6"
+            onColor="#FF0000"
+            onHandleColor="#FFFFFFd8"
             handleDiameter={30}
             uncheckedIcon={false}
             checkedIcon={false}
@@ -38,14 +38,14 @@ function App() {
             id="material-switch"/>
         <h2>{contextTheme} mode</h2>
         <img src={logo} className="App-logo" alt="logo"/>
-       <Routes>
+        <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home/>}/>
           <Route path="about" element={<About/>}/>
           <Route path="contact" element={<Contact/>}/>
         </Route>
 
-       </Routes>
+        </Routes>
       </header>
     </div>
   );

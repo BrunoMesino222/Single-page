@@ -6,8 +6,8 @@ const Contact = () => {
   return (
     <div>
         <h2>Contact</h2>
-        <p>Theme {contextTheme}</p>
         <p>Pagina de contacto</p>
+        <p>Theme {contextTheme}</p>
     </div>
   )
 }

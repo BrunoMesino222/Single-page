@@ -6,8 +6,8 @@ const Home = () => {
   return (
     <div>
         <h2>Home</h2>
-        <p>Theme {contextTheme}</p>
         <p>Pagina de inicio</p>
+        <p>Theme {contextTheme}</p>
     </div>
   )
 }
